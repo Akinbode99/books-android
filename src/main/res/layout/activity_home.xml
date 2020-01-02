@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/edittext_background_full"
+        android:elevation="4dp"
+        android:hint="Search for books"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_dehaze"
+        android:drawablePadding="15dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabTextColor="#000"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabIndicatorHeight="2dp"
+        app:tabBackground="@android:color/transparent"
+        app:tabMode="fixed" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

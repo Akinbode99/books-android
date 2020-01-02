@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/book_cover_image"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/the_revenant"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Revenant"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akinbode Oluwaseun"
+            android:layout_marginLeft="20dp"
+            android:textColor="#99000000"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stars"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Published: 26th March 2020"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N0.00"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
